@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import { Container, Row, Card, Button } from 'react-bootstrap'
-import Navbar from '../components/Navbar'
+import Navbar from '../components/navbar.js'
 import withTransition from "../HOC/withTransition"
 
 function Contato() {
