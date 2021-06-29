@@ -3,29 +3,22 @@ import { Container, Row, Card, Button } from 'react-bootstrap'
 import Navbar from '../components/Navbar'
 import withTransition from "../HOC/withTransition"
 
-function Home() {
+function Contato() {
   return (
-    <main className="home">
+      <main className="contato">
     <Container className="md-container">
       <Head>
         <title>ReactJS with react-bootstrap</title>
         <link rel="icon" href="/favicon-32x32.png" />
       </Head>
       <Navbar></Navbar>
-      
       <Container>
         <h1>
-          HOME
+          Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
         <p>
           Get started by editing <code>pages/index.js</code>
         </p>
-
-
-
-
-
-
         <Container>
           <Row className="justify-content-md-between">
             <Card className="sml-card">
@@ -85,7 +78,7 @@ function Home() {
         </Container>
       </Container>
 
-      <footer className="cntr-footer footer">
+      <footer className="cntr-footer">
         <a
           href="https://vercel.com?filter=next.js&utm_source=github&utm_medium=example&utm_campaign=next-example"
           target="_blank"
@@ -100,4 +93,4 @@ function Home() {
   )
 }
 
-export default withTransition(Home);
+export default withTransition(Contato);

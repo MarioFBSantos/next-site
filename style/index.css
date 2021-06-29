@@ -1,6 +1,36 @@
 /* ensure all pages have Bootstrap CSS */
 @import '~bootstrap/dist/css/bootstrap.min.css';
+  
 
+main.home{
+  background-color:#22223b;
+}
+main.sobre{
+  background-color:#22223b;
+}
+main.contato{
+  background-color:#22223b;
+}
+
+.slide-in {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background: #000000;
+  transform-origin: left;
+}
+
+.slide-out {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background: #000000;
+  transform-origin: right;
+}
 .md-container {
   max-width: 800px;
   padding-top: 2rem;
