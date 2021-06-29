@@ -2,100 +2,49 @@ import Head from 'next/head'
 import { Container, Row, Card, Button } from 'react-bootstrap'
 import Navbar from '../components/navbar.js'
 import withTransition from "../HOC/withTransition"
+import Jumbotron from 'react-bootstrap/Jumbotron'
+import Col from 'react-bootstrap/Col'
+import Nav from 'react-bootstrap/Nav'
+import CardDeck from 'react-bootstrap/CardDeck'
+import Image from 'react-bootstrap/Image'
+
 
 function Home() {
   return (
-    <main className="home">
-    <Container className="md-container">
+    <main className="home" fluid>
+
+      <Navbar></Navbar>
+    <Container fluid className="corpo">
       <Head>
         <title>ReactJS with react-bootstrap</title>
         <link rel="icon" href="/favicon-32x32.png" />
       </Head>
-      <Navbar></Navbar>
       
-      <Container>
-        <h1>
-          HOME
-        </h1>
-        <p>
-          Get started by editing <code>pages/index.js</code>
-        </p>
+      <Container fluid className="rostofundo">
+      <Jumbotron fluid="xl" className="rosto">
+        <Container fluid="md" className="rostofundo">
+      <h1>Mário Santos</h1>
+      <p>
+        Estudante de Sistemas de informação na UFF, Brasileiro e apaixonado por programação.
+      </p>
+      
 
+        <Button variant="light" size="lg" className="botaofront2">      <Nav.Link href="https://www.linkedin.com/in/mário-santos-597366165/" className="botaofront">Linkedin</Nav.Link>    </Button>{' '}
+        <Button variant="light" size="lg" className="botaofront2">      <Nav.Link href="https://github.com/MarioFBSantos" className="botaofront">Github</Nav.Link>    </Button>{' '}
+        <Button variant="light" size="lg" className="botaofront2">      <Nav.Link href="" eventKey="disabled" disabled className="botaofront">Coming soon</Nav.Link>     </Button>{' '}
+        
+  
+  </Container>
+</Jumbotron>
+</Container>
+      <Container className="pe" fluid>
+        <footer className="cntr-footer">
 
-
-
-
-
-        <Container>
-          <Row className="justify-content-md-between">
-            <Card className="sml-card">
-              <Card.Body>
-                <Card.Title>Documentation</Card.Title>
-                <Card.Text>
-                  Find in-depth information about Next.js features and API.
-                </Card.Text>
-                <Button variant="primary" href="https://nextjs.org/docs">
-                  More &rarr;
-                </Button>
-              </Card.Body>
-            </Card>
-            <Card className="sml-card">
-              <Card.Body>
-                <Card.Title>Learn</Card.Title>
-                <Card.Text>
-                  Learn about Next.js in an interactive course with quizzes!
-                </Card.Text>
-                <Button variant="primary" href="https://nextjs.org/learn">
-                  More &rarr;
-                </Button>
-              </Card.Body>
-            </Card>
-          </Row>
-          <Row className="justify-content-md-between">
-            <Card className="sml-card">
-              <Card.Body>
-                <Card.Title>Examples</Card.Title>
-                <Card.Text>
-                  Discover and deploy boilerplate example Next.js projects.
-                </Card.Text>
-                <Button
-                  variant="primary"
-                  href="https://github.com/vercel/next.js/tree/master/examples"
-                >
-                  More &rarr;
-                </Button>
-              </Card.Body>
-            </Card>
-            <Card className="sml-card">
-              <Card.Body>
-                <Card.Title>Deploy</Card.Title>
-                <Card.Text>
-                  Instantly deploy your Next.js site to a public URL with
-                  Vercel.
-                </Card.Text>
-                <Button
-                  variant="primary"
-                  href="https://vercel.com/new?utm_source=github&utm_medium=example&utm_campaign=next-example"
-                >
-                  More &rarr;
-                </Button>
-              </Card.Body>
-            </Card>
-          </Row>
-        </Container>
+        </footer>
       </Container>
-
-      <footer className="cntr-footer footer">
-        <a
-          href="https://vercel.com?filter=next.js&utm_source=github&utm_medium=example&utm_campaign=next-example"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className="sml-logo" />
-        </a>
-      </footer>
+      
     </Container>
+
     </main>
   )
 }

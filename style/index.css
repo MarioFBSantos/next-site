@@ -1,17 +1,60 @@
 /* ensure all pages have Bootstrap CSS */
 @import '~bootstrap/dist/css/bootstrap.min.css';
-  
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
 
-main.home{
-  background-color:#22223b;
+.botaofront2:hover{
+  border: 2px solid rgb(159, 4, 231);
+}
+.botaofront2{
+  border: 2px solid #121212;
+
+  text-align: center;
+  padding-left: 4%;
+  padding-right: 4%;
+}
+.botaofront{
+  text-decoration: none;
+  color:black;
+
+}
+p{
+  font-size:20px;
+}
+h1{
+  font-size: 40px;
+}
+.corpo{
+  padding: 2%;
+}
+.rosto{
+  padding:4%;
+  background-color: #ffffff00;
+}
+.rostofundo{
+  background-color: none;
+  padding: 3%;
+  padding-left: 0%;
+}
+main{
+  padding: 2%;
+  background-image: url("/fdm.gif");
+  width: 100%;
+  height: 100vh;
+  font-family: 'Ubuntu', sans-serif;
 }
 main.sobre{
   background-color:#22223b;
+  width: 100%;
+  height: 100vh;
 }
 main.contato{
   background-color:#22223b;
+  width: 100%;
+  height: 100vh;
 }
-
+.jumbotron{
+  width: 100%;
+}
 .slide-in {
   position: fixed;
   top: 0;
@@ -40,14 +83,19 @@ main.contato{
   width: 22rem;
   margin: 1rem 0;
 }
-
+.pe{
+  position: relative;
+}
 .cntr-footer {
+  position: absolute;
+  bottom: 0;
   height: 80px;
   margin-top: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-top: 1px solid #ccc;
+  bottom: 0;
+
 }
 
 .sml-logo {
